@@ -1,0 +1,112 @@
+header {
+  padding: 25px 0;
+  position: relative;
+  z-index: 2000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+nav img {
+  width: 120px;
+}
+
+nav .links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .links li a {
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+nav .links li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #1572d3;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s;
+}
+
+nav .links li a:hover::after {
+  width: 100%;
+}
+
+nav .buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .buttons a {
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.menu {
+  padding: 50px;
+  display: none;
+}
+
+
+
+.responsive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  z-index: 100;
+  background-color: #051C34;
+  color: white;
+  padding: 50px;
+}
+
+.responsiveLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .links {
+    font-size: 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .buttons {
+    font-size: 20px;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+}

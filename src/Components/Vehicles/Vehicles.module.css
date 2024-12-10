@@ -1,0 +1,78 @@
+.cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+}
+
+
+.cars span {
+  color: #959595;
+}
+
+
+.cars .car {
+  box-shadow: 0px 0px 15px #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.cars .car .carImg {
+  width: 250px;
+  height: 120px;
+}
+
+.cars .car h4 {
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.cars .car .preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.cars .car .details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+  font-size: 14px;
+  place-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cars .car .details .detail {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+}
+
+.cars .car .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.cars .car .price p {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.cars .car .price p span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cars .car button {
+  width: 100%;
+}
